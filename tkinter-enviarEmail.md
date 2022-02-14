@@ -26,7 +26,7 @@ def enviaEmails():
     msg.set_content(emailMensagem)
 
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
-        smtp.login(emailUsuario, '10@Rr20304050')
+        smtp.login(emailUsuario, 'Senha do seu email aqui.')
         smtp.send_message(msg)
 
 #   Colocar o email
